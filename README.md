@@ -1,2 +1,8 @@
 # sonarData
 Year 3: Data Mining Assignment
+
+This task is based on the Sonar real data seen previously in class. Several objects which can be rock or metal cylinders are scanned on different angles and under different conditions, with sonar signals. 60 measurements are recorded per columns for each object (one record per object) and these are the predictors called A1, A2, …, A60. The label associated with each record contains the letter "R" if the object is a rock and "M" if it is metal cylinder, and this is the outcome variable called Class.
+
+Two datasets are provided to you: a training dataset in the sonar_train.csv file, and a test dataset in the sonar_test.csv file.
+
+a) You are required to write a Python code implementing the simple Nearest Neighbour algorithm, with the Minkowski distance, both discussed in lecture of week 1. You should not implement k-Nearest Neighbour, for an arbitrary number of neighbours k. Your code will read the power q appearing in the Mionkowski distance, and will classify each record from the test dataset based on the training dataset. Remember, to classify a record from the test set you need to find its nearest neighbour in the training set (this is the one which minimizes the distance to the test set record); take the class of the nearest neighbour as the predicted class for the test set record. After classifying all the records in the test set, your code needs to calculate and display the accuracy, recall, precision, and F1 measure with respect to the class "M" (which is assumed to be the positive class), of the predictions on the test dataset. Run your code to produce results for Manhattan and for Euclidian distances, which are particular cases of Minkowski's distance. 
